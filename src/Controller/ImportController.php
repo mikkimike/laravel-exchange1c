@@ -7,10 +7,10 @@
  */
 declare(strict_types=1);
 
-namespace Bigperson\LaravelExchange1C\Controller;
+namespace Mikkimike\LaravelExchange1C\Controller;
 
-use Bigperson\Exchange1C\Exceptions\Exchange1CException;
-use Bigperson\Exchange1C\Services\CatalogService;
+use Mikkimike\Exchange1C\Exceptions\Exchange1CException;
+use Mikkimike\Exchange1C\Services\CatalogService;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 

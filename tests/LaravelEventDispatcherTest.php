@@ -9,9 +9,9 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use Bigperson\Exchange1C\Interfaces\EventDispatcherInterface;
-use Bigperson\Exchange1C\Interfaces\EventInterface;
-use Bigperson\LaravelExchange1C\LaravelEventDispatcher;
+use Mikkimike\Exchange1C\Interfaces\EventDispatcherInterface;
+use Mikkimike\Exchange1C\Interfaces\EventInterface;
+use Mikkimike\LaravelExchange1C\LaravelEventDispatcher;
 
 class LaravelEventDispatcherTest extends TestCase
 {

@@ -15,8 +15,8 @@ return [
     'use_zip'       => false,
     'file_part'     => 0,
     'models'        => [
-        \Bigperson\Exchange1C\Interfaces\GroupInterface::class   => \App\Models\Category::class,
-        \Bigperson\Exchange1C\Interfaces\ProductInterface::class => \App\Models\Product::class,
-        \Bigperson\Exchange1C\Interfaces\OfferInterface::class   => \App\Models\Offer::class,
+        \Mikkimike\Exchange1C\Interfaces\GroupInterface::class   => \App\Models\Category::class,
+        \Mikkimike\Exchange1C\Interfaces\ProductInterface::class => \App\Models\Product::class,
+        \Mikkimike\Exchange1C\Interfaces\OfferInterface::class   => \App\Models\Offer::class,
     ],
 ];

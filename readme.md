@@ -17,20 +17,20 @@ composer require bigperson/laravel-exchange1c
 ### Для Laravel 5.4 и ниже 
 Добавить сервис провайдер Exchange1CServiceProvider в `config/app.php`
 ```php
-Bigperson\LaravelExchange1C\Exchange1CServiceProvider::class
+Mikkimike\LaravelExchange1C\Exchange1CServiceProvider::class
 ```
  
 ### Опубликовать конфиги
 ```
-php artisan vendor:publish --provider="Bigperson\LaravelExchange1C\Exchange1CServiceProvider"
+php artisan vendor:publish --provider="Mikkimike\LaravelExchange1C\Exchange1CServiceProvider"
 ```
  
 ## Использование
 Вам необходимо в конфиге указать, логин, пароль, свои модели и реализовать соответсвующие интерфейсы
 ```php
-\Bigperson\Exchange1C\Interfaces\GroupInterface::class   => \App\Models\Category::class,
-\Bigperson\Exchange1C\Interfaces\ProductInterface::class => \App\Models\Product::class,
-\Bigperson\Exchange1C\Interfaces\OfferInterface::class   => \App\Models\Offer::class,
+\Mikkimike\Exchange1C\Interfaces\GroupInterface::class   => \App\Models\Category::class,
+\Mikkimike\Exchange1C\Interfaces\ProductInterface::class => \App\Models\Product::class,
+\Mikkimike\Exchange1C\Interfaces\OfferInterface::class   => \App\Models\Offer::class,
 ```
 Подробнее о методах, которые необходимо реализовать можно прочитать в документации к модулю [carono/yii2-1c-exchange]((https://github.com/carono/yii2-1c-exchange#%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D1%8B))
 Также необходимо [настроить 1С предприятие](https://github.com/carono/yii2-1c-exchange#%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-1%D0%A1) 
@@ -38,7 +38,7 @@ php artisan vendor:publish --provider="Bigperson\LaravelExchange1C\Exchange1CSer
 ### Подписка на события
 Вы можете подписаться на любое событие вызываемое внутри пакета [bigperson/exchange1c](https://github.com/bigperson/exchange1c/tree/master/src/Events) 
 ```php
-'Bigperson\Exchange1C\Events\BeforeOffersSync' => [
+'Mikkimike\Exchange1C\Events\BeforeOffersSync' => [
     'App\Listeners\BeforeOffersSyncListener',
 ],
 ```

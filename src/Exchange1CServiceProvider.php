@@ -7,12 +7,12 @@
  */
 declare(strict_types=1);
 
-namespace Bigperson\LaravelExchange1C;
+namespace Mikkimike\LaravelExchange1C;
 
-use Bigperson\Exchange1C\Config;
-use Bigperson\Exchange1C\Interfaces\EventDispatcherInterface;
-use Bigperson\Exchange1C\Interfaces\ModelBuilderInterface;
-use Bigperson\Exchange1C\ModelBuilder;
+use Mikkimike\Exchange1C\Config;
+use Mikkimike\Exchange1C\Interfaces\EventDispatcherInterface;
+use Mikkimike\Exchange1C\Interfaces\ModelBuilderInterface;
+use Mikkimike\Exchange1C\ModelBuilder;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\ServiceProvider;
 
