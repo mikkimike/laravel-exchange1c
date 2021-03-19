@@ -1,5 +1,5 @@
 {
-  "name": "bigperson/laravel-exchange1c",
+  "name": "mikkimike/laravel-exchange1c",
   "type": "library",
   "description": "Catalog Loader from 1c - CommerceML with laravel",
   "keywords": [
@@ -18,7 +18,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "Bigperson\\LaravelExchange1C\\": "src/"
+      "Mikkimike\\LaravelExchange1C\\": "src/"
     }
   },
   "autoload-dev": {
