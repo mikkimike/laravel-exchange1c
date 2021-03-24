@@ -40,4 +40,13 @@ class LaravelEventDispatcher implements EventDispatcherInterface
     {
         $this->eventDispatcher->dispatch($event);
     }
+    /**
+     * @param EventInterface[] $events
+     */
+    public function dispatches(array $events): void
+    {
+        foreach ($events as $event) {
+            $this->eventDispatcher->dispatch($event);
+        }
+    }
 }
