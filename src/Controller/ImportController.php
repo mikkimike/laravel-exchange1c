@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Mikkimike\LaravelExchange1C\Controller;
 
+use Illuminate\Support\Facades\Log;
 use Mikkimike\Exchange1C\Exceptions\Exchange1CException;
 use Mikkimike\Exchange1C\Services\CatalogService;
 use Illuminate\Http\Request;
@@ -27,6 +28,7 @@ class ImportController extends Controller
      */
     public function request(Request $request, CatalogService $service)
     {
+        Log::info(print_r($request->toArray(), true));
         $mode = $request->get('mode');
         $type = $request->get('type');
 
