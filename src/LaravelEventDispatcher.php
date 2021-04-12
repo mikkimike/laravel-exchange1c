@@ -9,9 +9,11 @@ declare(strict_types=1);
 
 namespace Mikkimike\LaravelExchange1C;
 
+use Closure;
 use Mikkimike\Exchange1C\Interfaces\EventDispatcherInterface;
 use Mikkimike\Exchange1C\Interfaces\EventInterface;
 use Illuminate\Contracts\Events\Dispatcher;
+use Mikkimike\Exchange1C\Interfaces\EventListenerInterface;
 
 /**
  * Class LaravelEventDispatcher.
@@ -40,6 +42,7 @@ class LaravelEventDispatcher implements EventDispatcherInterface
     {
         $this->eventDispatcher->dispatch($event);
     }
+
     /**
      * @param EventInterface[] $events
      */
